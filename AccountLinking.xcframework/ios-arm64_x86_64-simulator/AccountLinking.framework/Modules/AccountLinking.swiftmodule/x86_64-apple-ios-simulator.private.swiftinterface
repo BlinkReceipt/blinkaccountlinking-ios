@@ -1,0 +1,155 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AccountLinking
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+@_exported import AccountLinking
+import CommonCrypto
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum Retailer : Swift.Int {
+  case target = 1
+  case costco = 2
+  case cvs = 3
+  case dollarGeneral = 4
+  case dollarTree = 5
+  case kroger = 6
+  case publix = 7
+  case safeway = 8
+  case samsClub = 9
+  case walgreens = 10
+  case walmart = 11
+  case staples = 12
+  case homeDepot = 15
+  case lowes = 16
+  case acmeMarkets = 17
+  case meijer = 19
+  case albertsons = 20
+  case shopRite = 22
+  case jewelOsco = 23
+  case food4Less = 31
+  case harrisTeeter = 33
+  case ralphs = 40
+  case heb = 44
+  case bjsWholesale = 45
+  case wegmans = 52
+  case fredMeyer = 53
+  case sprouts = 54
+  case hyVee = 56
+  case vons = 63
+  case foodLion = 142
+  case riteAid = 143
+  case giantEagle = 144
+  case familyDollar = 165
+  case sephora = 171
+  case bestBuy = 177
+  case costcoCA = 5718
+  case walmartCA = 5849
+  case marshalls = 5917
+  case tjMaxx = 5921
+  case kohls = 5929
+  case asda = 6036
+  case sainsburysUK = 6048
+  case tesco = 6051
+  case carrefourES = 6059
+  case bedBathAndBeyond = 6074
+  case staplesCA = 6127
+  case dicksSportingGoods = 6162
+  case gap = 6457
+  case starbucks = 6677
+  case macys = 6802
+  case coles = 7610
+  case dominosPizza = 8366
+  case tacoBell = 8598
+  case amazonBeta = 8643
+  case woolworths = 8646
+  case instacart = 8652
+  case ulta = 8662
+  case nike = 8712
+  case shipt = 9016
+  case uberEats = 9137
+  case thriveMarket = 9416
+  case chewy = 9947
+  case seamless = 10068
+  case amazonUKBeta = 10078
+  case grubhub = 10208
+  case doordash = 10241
+  case drizly = 10934
+  case amazonCABeta = 12099
+  case amazonESBeta = 12686
+  case amazonDEBeta = 12687
+  case amazonFRBeta = 12688
+  case sheinES = 12691
+  case pcExpress = 12749
+  case temuUK = 12819
+  case sheinUK = 12848
+  case aliexpressUK = 12849
+  case uberEatsUK = 12850
+  case temuUS = 12881
+  case shein = 12882
+  case amazonAUBeta = 12948
+  case aliexpressUS = 13246
+  case postmates = 19671
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class Account : ObjectiveC.NSObject {
+  @objc public var retailer: AccountLinking.Retailer
+  @objc public var username: Swift.String
+  @objc public var password: Swift.String
+  @objc public var countryCode: Swift.String
+  @objc public var returnLatestOrdersOnly: Swift.Bool
+  @objc public var webviewAuthEnabled: Swift.Bool
+  @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String, countryCode: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AccountLinkingManager : ObjectiveC.NSObject {
+  @objc public var identifier: Swift.String?
+  @objc public var identifier1: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var identifier2: Swift.String
+  @objc public var identifier3: Swift.String
+  @objc public var identifier4: Swift.String
+  @objc public static let shared: AccountLinking.AccountLinkingManager
+  @objc public var analytics: ((_ event: Any) -> Swift.Void)?
+  @objc public var logMessage: ((_ message: Swift.String) -> Swift.Void)?
+  @objc public var logs: ((_ log: Any) -> Swift.Void)?
+  @objc public var displayDebugView: ((_ view: Any?) -> Swift.Void)?
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public func resetOrdersHistoryForRetailer(_ retailer: AccountLinking.Retailer)
+  @objc public func resetOrdersHistoryForAccount(_ guid: Swift.String)
+  @objc public func removeUserDataForRetailer(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func updateConfiguration(_ data: Foundation.Data?)
+  #endif
+  @objc public func cancelSessionWithIdentifier(_ identifier: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func verifyAccount(_ account: AccountLinking.Account, metadata: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, metadata: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class AuthorizationViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension AccountLinking.Retailer : Swift.Equatable {}
+extension AccountLinking.Retailer : Swift.Hashable {}
+extension AccountLinking.Retailer : Swift.RawRepresentable {}

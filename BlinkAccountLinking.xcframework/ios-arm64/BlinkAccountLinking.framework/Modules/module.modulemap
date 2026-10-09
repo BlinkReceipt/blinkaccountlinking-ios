@@ -1,0 +1,6 @@
+framework module BlinkAccountLinking {
+  umbrella header "BlinkAccountLinking.h"
+  export *
+
+  module * { export * }
+}
