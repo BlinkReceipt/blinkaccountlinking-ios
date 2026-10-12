@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/BlinkAccountLinking.framework/BlinkAccountLinking</key>
 		<data>
-		qrEFwzAXAx8CdXNudY+oPjdA1Us=
+		5nOVJmXd4Gul/DGoHaw0+xo0Tec=
 		</data>
 		<key>ios-arm64/BlinkAccountLinking.framework/Headers/BRAccountLinkingConfiguration.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkAccountLinking.framework/BlinkAccountLinking</key>
 		<data>
-		UyD8n4q+y3J/OZY0du8lIrSSBYM=
+		92BfJboA01LSXcD4EMesDxeCP/8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlinkAccountLinking.framework/Headers/BRAccountLinkingConfiguration.h</key>
 		<data>
@@ -95,7 +95,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L0cRWAVta1ynDRxz3tTs6zbIBHkuzAL4E2pkerXwU4A=
+			/gE59JZyX/gt5BkDbKTE8ZkyNc8mwbHn3+xFVUP5NoE=
 			</data>
 		</dict>
 		<key>ios-arm64/BlinkAccountLinking.framework/Headers/BRAccountLinkingConfiguration.h</key>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oEhT1K6UiOt/uIcxcljmuvsqos5u7tkUdUMGilVl+7I=
+			4DX11jPpzECjRFAZVDzZn1rN6xHf0pNptsjcU9u1bjc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlinkAccountLinking.framework/Headers/BRAccountLinkingConfiguration.h</key>
