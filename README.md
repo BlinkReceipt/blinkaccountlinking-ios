@@ -7,7 +7,7 @@ Add the package in Xcode or in `Package.swift` and link the `BlinkAccountLinking
 ```swift
 // release
 .package(url: "https://github.com/BlinkReceipt/blinkaccountlinking-ios.git", exact: "1.0.0")
-// release candidate, before the 1.0.0 tag exists
+// staging builds: the release branch of the version under test (rc/1.0.0 is the same commit as 1.0.0)
 .package(url: "https://github.com/BlinkReceipt/blinkaccountlinking-ios.git", branch: "rc/1.0.0")
 ```
 
